@@ -66,7 +66,7 @@ router.get('/', async (req, res) => {
                     removeFile('./temp/' + id);
                 } else if (connection === 'close' && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode !== 401) {
                     await delay(10000);
-                    RAVEN();
+                    JAPHETTECH();
                 }
             });
         } catch (err) {
@@ -78,7 +78,7 @@ router.get('/', async (req, res) => {
         }
     }
 
-    await RAVEN();
+    await JAPHETTECH();
 });
 
 module.exports = router;
