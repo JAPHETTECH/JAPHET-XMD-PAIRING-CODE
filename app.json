@@ -1,9 +1,9 @@
 {
-    "name": "Raven session",
+    "name": "Japhet-Xmd session",
     "description": "a session generator for raven-bot",
-    "logo": "https://files.catbox.moe/ojo6av.jpg",
+    "logo": "https://files.catbox.moe/2m29ew",
     "repository": "https://github.com/HunterNick2/RAVEN-BOT",
-    "keywords": ["RAVEN-BOT"],
+    "keywords": ["JAPHET-XMD"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      
