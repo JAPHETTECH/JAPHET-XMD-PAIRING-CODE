@@ -28,13 +28,13 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function RAVEN() {
+	async function JJAPHETTECH() {
 		const {
 			state,
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let client = RavenConnect({
+			let client = JaphetxmdConnect({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
@@ -59,7 +59,7 @@ router.get('/', async (req, res) => {
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await client.sendMessage(client.user.id, { text: '' + b64data });
 	
-let Textt = "```Raven has been linked to your WhatsApp account! Do not share this session_id with anyone.\n\nCopy and paste it on the SESSION string during deploy as it will be used for authentication.\n\nIncase you are facing Any issue reach me via here👇\n\nhttps://wa.me/message/YNDA2RFTE35LB1\n\nAnd don't forget to sleep😴, for even the rentless must recharge⚡.\n\nGoodluck 🎉.```"
+let Textt = "```Japhettech-Xmd has been linked to your WhatsApp account! Do not share this session_id with anyone.\n\nCopy and paste it on the SESSION string during deploy as it will be used for authentication.\n\nIncase you are facing Any issue reach me via here👇\n\nhttps://wa.me/255613914546\n\nAnd don't forget to sleep😴, for even the rentless must recharge⚡.\n\nGoodluck 🎉.```"
 	
 			await client.sendMessage(client.user.id,{ text: Textt }, {quoted: session })
 
@@ -69,7 +69,7 @@ let Textt = "```Raven has been linked to your WhatsApp account! Do not share thi
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					RAVEN();
+					JAPHETTECH();
 				}
 			});
 		} catch (err) {
