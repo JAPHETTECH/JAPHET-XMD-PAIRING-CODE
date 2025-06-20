@@ -1,7 +1,7 @@
 {
-    "name": "Japhet-Xmd session",
-    "description": "a session generator for JAPHET-XMD",
-    "logo": "https://files.catbox.moe/q04i2g",
+    "name": "JAPHET-XMD SESSION",
+    "description": "A SESSION GENERATOR FOR JAPHET-XMD",
+    "logo": "https://files.catbox.moe/7zuqgl.jpg",
     "repository": "https://github.com/JAPHETTECH/JAPHET-XMD-PAIRING-CODE",
     "keywords": ["JAPHET-XMD"],
     "success_url": "/", 
@@ -13,7 +13,7 @@
         "required": false 
       },
       "MESSAGE": {
-        "description": "This site is only for session generating",
+        "description": "THIS SITE IS ONLY FOR SESSION GENERATING",
         "value": "",
         "required": false 
       }
