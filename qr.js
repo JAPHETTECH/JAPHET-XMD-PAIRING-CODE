@@ -28,7 +28,7 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function JJAPHETTECH() {
+	async function JAPHETTECH() {
 		const {
 			state,
 			saveCreds
