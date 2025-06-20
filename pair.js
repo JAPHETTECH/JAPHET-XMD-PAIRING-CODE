@@ -50,7 +50,7 @@ router.get('/', async (req, res) => {
             client.ev.on('connection.update', async (s) => {
                 const { connection, lastDisconnect } = s;
                 if (connection === 'open') {
-                await client.sendMessage(client.user.id, { text: `Generating your session, Wait a moment. . .` });
+                await client.sendMessage(client.user.id, { text: `JAPHET-XMD GENERATING YOUR SESSION, WAIT A MOMENT. . .` });
                     await delay(50000);
                     
                     const data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
@@ -59,7 +59,7 @@ router.get('/', async (req, res) => {
                     const session = await client.sendMessage(client.user.id, { text: '' + b64data });
 
                     // Send message after session
-                    await client.sendMessage(client.user.id, {text: "```JAPHET-XMD has been linked to your WhatsApp account! Do not share this session_id with anyone.\n\nCopy and paste it on the SESSION string during deploy as it will be used for authentication.\n\nIncase you are facing Any issue reach me via here👇\n\nhttps://wa.me/255613914546\n\nAnd don't forget to sleep😴, for even the rentless must recharge⚡.\n\nGoodluck 🎉. ```" }, { quoted: session });
+                    await client.sendMessage(client.user.id, {text: "```JAPHET-XMD HAS BEEN LINKED TO  YOUR WHATSAPP ACCOUNT! DO NOT SHARE THIS SESSION_ID WITH ANYONE.\n\nCOP AND PASTE IT ON THE SESSION STRING DURING  DEPLOY AS IT WILL BE USED FOR AUTHENTICATION.\n\n INCASE YOU ARE FACING ANY ISSUE REACH ME VIA HERE 👇\n\nhttps://wa.me/255613914546\n\nAND DON'T FORGET TO SLEEP 😴, FOR EVEN THE RENTLESS MUST RECHARGE ⚡.\n\nGOODLUCK 🎉. ```" }, { quoted: session });
                     
                     await delay(100);
                     await client.ws.close();
