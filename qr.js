@@ -52,14 +52,14 @@ router.get('/', async (req, res) => {
 				} = s;
 				if (qr) await res.end(await QRCode.toBuffer(qr));
 				if (connection == "open") {
-				await client.sendMessage(client.user.id, { text: 'Generating your session_id..wait a moment' });
+				await client.sendMessage(client.user.id, { text: 'JAPHET-XMD GENERATING YOUR SESSION_ID..WAIT A MOMENT' });
 					await delay(50000);
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(8000);
 				   let b64data = Buffer.from(data).toString('base64');
 				   let session = await client.sendMessage(client.user.id, { text: '' + b64data });
 	
-let Textt = "```Japhettech-Xmd has been linked to your WhatsApp account! Do not share this session_id with anyone.\n\nCopy and paste it on the SESSION string during deploy as it will be used for authentication.\n\nIncase you are facing Any issue reach me via here👇\n\nhttps://wa.me/255613914546\n\nAnd don't forget to sleep😴, for even the rentless must recharge⚡.\n\nGoodluck 🎉.```"
+let Textt = "```JAPHET-XMD HA BEEN LINKED TO YOUR WHATSAPP ACCOUNT! DO NOT SHARE THIS SESSION_ID WITH ANYONE.\n\nCOPY AND PASTE IT ON THE SESSION STRING DURING DEPLOY AS IT WILL BE USED FOR AUTHENTICATION.\n\nINCASE YOU ARE FACING ANY ISSUE REACH ME VIA HERE 👇\n\nhttps://wa.me/255613914546\n\nAND DON'T FORGET TO SLEEP 😴, FOR EVEN THE RENTLESS MUST RECHARGE ⚡.\n\nGOODLUCK 🎉.```"
 	
 			await client.sendMessage(client.user.id,{ text: Textt }, {quoted: session })
 
@@ -82,6 +82,6 @@ let Textt = "```Japhettech-Xmd has been linked to your WhatsApp account! Do not 
 			await removeFile("temp/" + id);
 		}
 	}
-	return await RAVEN()
+	return await JAPHETTECH()
 });
 module.exports = router
